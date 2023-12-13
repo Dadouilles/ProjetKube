@@ -1,5 +1,10 @@
 services:
   vote:
     image: dockersamples/examplevotingapp_vote
+    depends_on:
+      redis:
+        condition: service_healthy 
     ports:
       - "5000:80"
+
+ 
