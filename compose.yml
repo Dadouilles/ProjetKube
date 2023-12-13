@@ -1,0 +1,5 @@
+services:
+  vote:
+    image: dockersamples/examplevotingapp_vote
+    ports:
+      - "8080:80"
